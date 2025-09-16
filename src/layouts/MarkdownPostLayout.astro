@@ -4,6 +4,8 @@ import BaseLayout from "./BaseLayout.astro";
 ---
 
 <BaseLayout pageTitle={frontmatter.title}>
+  <p>{frontmatter.pubDate.toLocaleDateString()}</p>
+
   <meta name="description" content={frontmatter.description} />
   <p>{frontmatter.pubDate}</p>
   <p><em>{frontmatter.description}</em></p>
